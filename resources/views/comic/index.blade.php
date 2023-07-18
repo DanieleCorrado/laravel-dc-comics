@@ -12,6 +12,11 @@
                     <a href="{{ route('comics.show', $comic->id) }}">
                         {{ $comic->title }}
                     </a>
+
+                    <a class="mx-3 btn btn-primary" href="{{ route('edit', $comic->id) }}">
+                        EDIT
+                    </a>
+
                 </li>
             @endforeach
         </ul>
